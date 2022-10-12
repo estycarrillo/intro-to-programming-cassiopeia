@@ -60,7 +60,22 @@
 <p><a href="https://github.com/estycarrillo">Github</a></p>
 <p><a href="https://www.linkedin.com/in/estevan-carrillo-b37626218/">LinkedIn</a></p>
 </section>
-
+<section>
+    <h2>Leave a message</h2>
+    <form name="leave_message">
+        <label id="namePrompt">Your name:</label>
+        <input type="text" name="name" required=true></input><br />
+        <label id="emailPrompt">Your email:</label>
+        <input type="email" name="email" required=true></input><br />
+        <label id="messagePrompt">Enter a message:</label>
+        <textarea name="message" required=true></textarea><br />
+        <button type="submit">Submit</button>
+    </form>
+</section>
+    <section id="messages">
+        <h2>Messages</h2>
+        <ul></ul>
+    </section>
     <footer></footer>
     <script src="js/index.js"></script>
 </body>
