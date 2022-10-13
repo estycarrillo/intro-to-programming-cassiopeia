@@ -9,36 +9,37 @@
 </html>
 
 <body>
+    <ul class="navbar">
+        <a href="#home" class="navbar" id="navbar_link_home"><li class="navbar" id="navbar_link_home">Home</li></a>
+        <a href="#about" class="navbar" id="navbar_link_about"><li class="navbar" id="navbar_link_about">About</li></a>
+        <a href="#experience" class="navbar" id="navbar_link_experience"><li class="navbar" id="navbar_link_experience">Experience</li></a>
+        <a href="#skills" class="navbar" id="navbar_link_skills"><li class="navbar" id="navbar_link_skills">Skills</li></a>
+    </ul>
 
-<section class="page-name-title">
-    <h1>Estevan Carrillo</h1>
+<section class="home" id="home">
+    <div class="home" id="home_header"><h1 class="home">Estevan Carrillo</h1></div>
 </section>
 
-<section>
-<h2>About:</h2>
-<p>Hello, as you know, my name is Estevan but I also go by Esty as it is easier for people to pronounce.
+<div class="about"><section class="about" id="about">
+    <div class="about" id="about_header"><h2 class="about">About:</h2></div>
+    <div class="about" id="about_text"></div><p class="about">Hello, as you know, my name is Estevan but I also go by Esty as it is easier for people to pronounce.
     Despite being in Code the Dream, I am very new to the world of coding. I began my career as an educator
     and shifted careers this year (2022). I currently work as an administrative assistant for a health
     company where I focus more on developing projects, overseeing online data, etc. Joining CtD was meant
     to refocus on what I initially began studying as a college student, and I hope to take advantage of this
-    opportunity so I can eventually work for a strong tech company, preferably a gaming company.</p>
+    opportunity so I can eventually work for a strong tech company, preferably a gaming company.</p></div>
 </section>
     
-<section class="experience">
-    <h2>Experience:</h2>
-<ul><li>Pre-College Experience
-    - Jumpoline Park, Cashier</li>   
+<section class="experience" id="experience">
+    <div class="experience" id="experience_header"><h2 class="experience">Experience:</h2></div>
+<ul><li>Jumpoline Park, Cashier</li>  
+    <li>University of Cincinnati Alumni Center, Student Worker</li></ul>
  
-<li>College Experience
-    - University of Cincinnati Alumni Center, Student Worker
-    - University of Cincinnati REC Center, Camp Counselor and Referee</li>
+<ul><li>University of Cincinnati REC Center, Camp Counselor and Referee</li>
+    <li>Minnesota Math and Science Academy, 5th Grade Math Teacher</li></ul>
  
-<li>Teaching Experience
-    - Minnesota Math and Science Academy, 5th Grade Math Teacher
-    - Robbinsdale Middle School, 6th-8th Grade Math Teacher</li>
- 
-<li>Post Teaching Experience
-    - Panacea Healthcare Solutions LLC</li></ul>
+<ul><li>Robbinsdale Middle School, 6th-8th Grade Math Teacher</li>
+    <li>Panacea Healthcare Solutions LLC</li></ul>
  
 <p>As I previously mentioned, I am new to coding so I do not have any coding experience outside of the class.
     My current job provides avenues to getting coding experience, but I am currently doing different work for
@@ -51,8 +52,8 @@
     on in Cassiopeia. A year from now, I hope to have developed a significant boost in my relevant experience.</p>
 </section>
 
-<section class="skills">
-    <h2>Skills</h2>
+<section class="skills" id="skills">
+    <div class="skills" id="skills_header"><h2 class="skills">Skills:</h2></div>
     <ul></ul>
 </section>
 
@@ -63,19 +64,20 @@
 <p><a href="https://www.linkedin.com/in/estevan-carrillo-b37626218/">LinkedIn</a></p>
 </section>
 <section class="contact">
-    <h2>Leave a message</h2>
-    <form name="leave_message">
-        <label id="namePrompt">Your name:</label>
+    
+    <h2>Leave a message:</h2>
+    <div class="grid-container"><form name="leave_message">
+        <div class="grid-item"><label id="namePrompt">Your name:</label></div>
         <input type="text" name="name" required=true></input><br />
-        <label id="emailPrompt">Your email:</label>
+        <div class="grid-item"><label id="emailPrompt">Your email:</label></div>
         <input type="email" name="email" required=true></input><br />
-        <label id="messagePrompt">Enter a message:</label>
+        <div class="grid-item"><label id="messagePrompt">Enter a message:</label></div>
         <textarea name="message" required=true></textarea><br />
         <button class="submit_button" type="submit">Submit</button>
-    </form>
+    </form></div>
 </section>
     <section class="messages">
-        <h2>Messages</h2>
+        <h2>Messages:</h2>
         <ul></ul>
     </section>
     <footer></footer>
