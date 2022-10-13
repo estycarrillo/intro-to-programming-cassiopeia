@@ -3,7 +3,7 @@ const thisYear = today.getFullYear();
 const footer = document.querySelector("footer");
 const messageForm = document.querySelector('[name="leave_message"]');
 const submission = messageForm.addEventListener('submit', handleSubmit);
-const messageSection = document.querySelector('#messages');
+const messageSection = document.querySelector('.messages');
 const messagesList = messageSection.querySelector('ul');
 messageSection.style.visibility = 'hidden';
 
@@ -32,10 +32,12 @@ function handleSubmit(e) {
     let removeButton = document.createElement('button');
     removeButton.innerHTML = "Remove";
     removeButton.type = "button";
+    removeButton.classList.add("remove_button");
     removeButton.addEventListener('click', removeElement);
     let editButton = document.createElement('button');
     editButton.innerHTML = "Edit";
     editButton.type = "button";
+    editButton.classList.add("edit_button");
     editButton.addEventListener('click', editElement);
     newMessage.appendChild(editButton);
     newMessage.appendChild(removeButton);
