@@ -8,23 +8,25 @@ const messagesList = messageSection.querySelector('ul');
 const projectSection = document.querySelector('#project-section');
 messageSection.style.visibility = 'hidden';
 
-const githubRequest = new XMLHttpRequest();
-githubRequest.open("GET", "https://api.github.com/users/estycarrillo/repos");
-githubRequest.send();
+fetch('https://api.github.com/users/estycarrillo/repos')
+    .then((response) => response.json())
+    .then(afterResponse)
+    .catch(handleErrors);
 
-githubRequest.onreadystatechange = () => {
-    if (githubRequest.readyState === XMLHttpRequest.DONE && githubRequest.status == 200) {
-        console.log("Success");
-        console.log(projectSection);
-        const response = JSON.parse(githubRequest.responseText);
-        console.log("Here's our response", response);
-        for (let i = 0; i < response.length; i++) {
-            let project = document.createElement("li");
-            project.innerHTML = response[i].name;
-            project.classList.add("projects");
-            projectSection.appendChild(project);
-        }
+function afterResponse(response) {
+    for (let i = 0; i < response.length; i++) {
+        let project = document.createElement("li");
+        project.innerHTML = response[i].name;
+        project.classList.add("projects");
+        projectSection.appendChild(project);
     }
+}
+    
+function handleErrors (error) {
+    console.log("Unable to load Github API", error);
+    let item = document.createElement("li");
+    item.innerHTML = "Unable to load responsitories. Please try again later.";
+    projectSection.appendChild(item);
 }
 
 let copyright = document.createElement("p");
