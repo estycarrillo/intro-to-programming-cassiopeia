@@ -5,7 +5,27 @@ const messageForm = document.querySelector('[name="leave_message"]');
 const submission = messageForm.addEventListener('submit', handleSubmit);
 const messageSection = document.querySelector('.messages');
 const messagesList = messageSection.querySelector('ul');
+const projectSection = document.querySelector('#project-section');
 messageSection.style.visibility = 'hidden';
+
+const githubRequest = new XMLHttpRequest();
+githubRequest.open("GET", "https://api.github.com/users/estycarrillo/repos");
+githubRequest.send();
+
+githubRequest.onreadystatechange = () => {
+    if (githubRequest.readyState === XMLHttpRequest.DONE && githubRequest.status == 200) {
+        console.log("Success");
+        console.log(projectSection);
+        const response = JSON.parse(githubRequest.responseText);
+        console.log("Here's our response", response);
+        for (let i = 0; i < response.length; i++) {
+            let project = document.createElement("li");
+            project.innerHTML = response[i].name;
+            project.classList.add("projects");
+            projectSection.appendChild(project);
+        }
+    }
+}
 
 let copyright = document.createElement("p");
 copyright.innerHTML = "Estevan Carrillo © " + thisYear;
