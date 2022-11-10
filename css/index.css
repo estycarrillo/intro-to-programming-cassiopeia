@@ -25,7 +25,7 @@ ul.navbar {
     display: block;
     background-color: rgb(236, 242, 207);
     width: 100%;
-    position: fixed;
+    position: static;
 }
 
 li.navbar, a.navbar {
