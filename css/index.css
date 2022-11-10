@@ -2,15 +2,17 @@ body {
     margin-top: 60px;
     padding: 30px;
     padding-top: 15px;
-    background-color: rgb(20, 2, 20);
+    background-color: rgb(26, 25, 22);
 }
 
 * {
-    color: rgb(14, 189, 216);
+    color: rgb(39, 73, 44);
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    font-size: 15px;
 }
 
 footer {
-    background-color: rgb(113, 44, 94);
+    background-color: rgb(236, 242, 207);
     color: rgb(0, 0, 0);
     padding: 15px;
 }
@@ -21,7 +23,7 @@ ul.navbar {
     padding: 0;
     overflow: hidden;
     display: block;
-    background-color: rgb(113, 44, 94);
+    background-color: rgb(236, 242, 207);
     width: 100%;
     position: fixed;
 }
@@ -33,7 +35,7 @@ li.navbar, a.navbar {
 }
 
 a.navbar {
-    background-color: rgb(94, 18, 72);
+    background-color: rgb(224, 232, 187);
     align-items: center;
 }
 
@@ -42,29 +44,23 @@ li.navbar {
 }
 
 a.navbar:hover {
-    background-color:rgb(6, 22, 60)
-}
-
-a.navbar:active {
-    background-color:rgb(113, 44, 94);
-    color: rgb(20, 2, 20);
+    background-color:rgb(204, 239, 255)
 }
 
 h1 {
-    font-family: 'Silkscreen';
-    color: rgb(245, 46, 179);
-    font-size: x-large;
+    font-family: 'hylia_serif_betaregular';
+    color: rgb(60, 211, 248);
+    font-size: 45px;
 }
 
 h2 {
-    font-family: 'Silkscreen';
-    color: rgb(245, 46, 179);
-    font-size: larger;
+    font-family: 'hylia_serif_betaregular';
+    color: rgb(39, 73, 44);
+    font-size: 25px;
 }
 
 .home {
     margin: auto;
-    width: 50%;
     text-align: center;
 }
 
@@ -74,73 +70,96 @@ section {
 }
 
 .about {
+    border-radius: 20px;
     display: block;
-    background-color: rgb(235, 219, 43);
+    background-color: rgb(236, 242, 207);
 }
 
-.experience {
-    display: flex;
-    flex-direction: row;
-    margin: 5px 1px 10px 10px;
-    background-color: rgb(6, 22, 60);
+.experiences {
+    border-radius: 20px;
+    display: block;
+    background-color: rgb(236, 242, 207);
 }
 
 div.experience_li {
-    border: dashed;
-    border-color: rgb(235, 219, 43);
+    border: block;
+    border-color: rgb(236, 242, 207);
     border-width: 1px;
 }
 
 .skills {
+    border-radius: 20px;
     display: block;
-    background-color: rgb(235, 219, 43);
+    background-color: rgb(236, 242, 207);
 }
 
 .projects {
+    border-radius: 20px;
     display: block;
-    background-color: rgb(6, 22, 60);
+    background-color: rgb(236, 242, 207);
 }
 
 .connecting {
+    border-radius: 20px;
     display: block;
-    background-color: rgb(235, 219, 43);
+    background-color: rgb(236, 242, 207);
 }
 
 .contact {
+    border-radius: 20px;
     display: block;
-    background-color: rgb(6, 22, 60);
+    background-color: rgb(236, 242, 207);
 }
 
 .messages {
+    border-radius: 20px;
     display: block;
-    background-color: rgb(6, 22, 60);
+    background-color: rgb(236, 242, 207);
 }
 
 button {
-    background-color: rgb(245, 46, 179);
+    background-color: rgb(26, 25, 22);
     border-radius: 15px;
     border-width: 3px;
-    border-color: rgb(20, 2, 20);
-    color: rgb(20, 2, 20);
+    border-color: rgb(42, 30, 0);
+    color: rgb(60, 211, 248);
     padding: 5px;
     margin: 5px;
 }
 
 button:hover {
-    background-color: rgb(20, 2, 20);
-    color: rgb(245, 46, 179);
-    border-color: rgb(245, 46, 179);
+    background-color: rgb(60, 211, 248);
+    color: rgb(26, 25, 22);
+    border-color: rgb(42, 30, 0);
 }
 
 .remove_button {
-    background-color: rgb(14, 189, 216);
-    color: rgb(0, 0, 0);
-    border-color: rgb(245, 46, 179);
+    background-color: rgb(26, 25, 22);
+    color: rgb(60, 211, 248);
+    border-color: rgb(42, 30, 0);
 
 }
 
 .edit_button {
-    background-color: rgb(235, 219, 43);
-    color: rgb(0, 0, 0);
-    border-color: rgb(245, 46, 179);
+    background-color: rgb(26, 25, 22);
+    color: rgb(60, 211, 248);
+    border-color: rgb(42, 30, 0);
 }
+
+.ren {
+    border-radius: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+
+@media only screen and (max-width: 800px) {
+    ul.navbar {
+        display: none;
+    }
+    
+    li.navbar, a.navbar {
+        display: none;
+    }
+  }
