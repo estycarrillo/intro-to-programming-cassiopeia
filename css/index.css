@@ -154,6 +154,11 @@ button:hover {
     width: 25%;
 }
 
+.footer-align {
+    margin-top: -.7%;
+    float: right;
+}
+
 @media only screen and (max-width: 800px) {
     ul.navbar {
         display: none;
