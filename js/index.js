@@ -42,15 +42,6 @@ for (let i = 0; i < skills.length; i++) {
     ul.appendChild(skill);
 }
 
-const experiences = ["Jumpoline Park, Cashier", "University of Cincinnati Alumni Center, Student Worker"];
-const experienceSection = document.querySelector("#experiences");
-const el = experienceSection.querySelector("el");
-for (let i = 0; i < experiences.length; i++) {
-    const experience = document.createElement("li");
-    experience.innerText = experiences[i];
-    ul.appendChild(experience);
-}
-
 function handleSubmit(e) {
     e.preventDefault();
     const name = e.target.name.value;
