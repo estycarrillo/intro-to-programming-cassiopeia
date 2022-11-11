@@ -77,15 +77,24 @@ section {
 
 .experiences {
     border-radius: 20px;
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
     background-color: rgb(236, 242, 207);
 }
 
-div.experience_li {
-    border: block;
-    border-color: rgb(236, 242, 207);
-    border-width: 1px;
-}
+.experience-item {
+    border-radius: 20px;
+    background-color: rgba(39, 73, 44);
+    color: rgb(236, 242, 207);
+    margin:8px;
+    padding: 10px;
+    font-size: 80%;
+    text-align: center;
+    width: 200px;
+    height: 40px;
+  }
 
 .skills {
     border-radius: 20px;
